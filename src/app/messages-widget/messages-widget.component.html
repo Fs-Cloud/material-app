@@ -1,0 +1,44 @@
+
+<h2>Messages</h2>
+          <button md-button [mdMenuTriggerFor]="appMenu">
+          <p style="margin: 5px 0px 5px -10px">+ &nbsp; &nbsp;You have 2 unread messages connected to Daniel Howell</p>
+          </button>
+          <md-menu x-position="before" #appMenu="mdMenu">
+            <button md-menu-item> Send new message </button>
+            <md-divider></md-divider>
+            <button md-menu-item> Mark aas read </button>
+          </md-menu>
+
+<div class="messages-widget-list">
+  
+    <div class="messages-widget-item">
+      <button md-button style="padding: 2px 10px 2px 10px !important">
+      <div class="messages-widget-item-date">
+        <h1>25</h1>
+        <h2>jan</h2>
+      </div>
+      <div class="messages-widget-item-detail">
+      <h1>Daniel Howell &amp; 1 other</h1>
+      <p>What do you think of this kind of layout for at least a starting point? I’ve tried to keep things as flat 
+    aesthetically as possible without looking too cartoony. The issue is the initial grid layout I had gone for
+    doesnt make the best use of the right page margin. Give us a call…</p>
+    </div>
+    </button>
+    </div>
+
+    <div class="messages-widget-item">
+      <button md-button style="padding: 2px 10px 2px 10px !important">
+      <div class="messages-widget-item-date">
+        <h1>25</h1>
+        <h2>jan</h2>
+      </div>
+      <div class="messages-widget-item-detail">
+      <h1>Daniel Howell &amp; 1 other</h1>
+      <p>What do you think of this kind of layout for at least a starting point? I’ve tried to keep things as flat 
+    aesthetically as possible without looking too cartoony. The issue is the initial grid layout I had gone for
+    doesnt make the best use of the right page margin. Give us a call…</p>
+    </div>
+    </button>
+    </div>
+  
+</div>

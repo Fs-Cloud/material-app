@@ -1,0 +1,184 @@
+.example-sidenav-fab-container {
+	height: 100%;
+//   border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.example-sidenav-fab-container md-sidenav {
+  // max-width: 348.14px;
+  // height: calc(100vh - 42px);
+  background-color: #f7f7f7 !important;
+}
+
+.example-sidenav-fab-container .md-sidenav-content,
+.example-sidenav-fab-container md-sidenav {
+  display: flex;
+  // overflow: visible;
+}
+
+.example-scrolling-content {
+	padding-top: 0px;
+  width: 100%;
+  background-color: #f7f7f7 !important;
+	border: solid;
+  border-top: none;
+  height: calc(100vh - 42px);
+	border-width: 1px;
+	border-color: #E2E2E4;
+  overflow-y: scroll;
+}
+
+.example-fab {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+
+.app-content {
+	min-height: 200vh;
+  
+}
+
+.example-card {
+  width: 400px;
+}
+.detail-container {
+  width: 100%;
+  background-color: #ffffff;
+  height: 100vh;
+}
+
+.right-sidenav {
+  max-width: 320px;
+}
+.left-sidenav {
+  max-width: 348.14px;
+}
+.intro-container {
+  height: 266px;
+  border-bottom: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #E2E2E4;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.context-subheader {
+  height: 66px !important; 
+  background-color: #fff !important; 
+  margin-bottom: 0px;
+  border-right: solid;
+	border-right-width: 1px;
+	border-right-color: #E2E2E4;
+  border-left: solid;
+	border-left-width: 1px;
+	border-left-color: #E2E2E4;
+}
+
+.intro-padding {
+  height: 1px;
+  
+}
+.intro-card {
+  margin-top: -20px;
+  border-radius: 4px;
+  background-color: #3DADA9;
+  width: 441px;
+  height: 227px;
+  display: block;
+}
+
+.task-home-container {
+  max-height: 266px;
+  border-bottom: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #E2E2E4;
+  margin-left: 20px;
+  padding-bottom: 30px;
+}
+
+.main-scroll {
+    width: calc(100vw - 320px);
+}
+
+
+h1 {
+  font-family: "Lato-Regular";
+  font-size: 14px;
+  line-height: 17px;
+  color: #5a5a5a;
+  display: block;
+  margin-bottom: 0px;
+  font-weight: 500 !important;
+}
+h2 {
+  font-size: 12px;
+  font-family: "Lato";
+  // margin-left: 20px;
+  font-weight: 700 !important;
+  color: #838383;
+}
+h3 {
+  padding-top: 14.5px;
+  font-family: "Lato-Regular";
+  font-size: 20px;
+  line-height: 24px;
+  color: #5a5a5a;
+  display: block;
+  margin-bottom: 0px;
+  font-weight: 100 !important;
+}
+h5 {
+  color: #f7f7f7;
+}
+h4 {
+  font-family: "Lato";
+  font-weight: 500 !important;
+  color: #ffffff;
+  position: relative;
+  top: 20px;
+  font-size: 35px;
+  left: 15px;
+}
+p {
+  margin-top: 0px;
+  font-family: "Lato-Regular";
+  font-size: 14px;
+  line-height: 17px;
+  color: #838383;
+  display: block;
+}
+
+md-checkbox {
+  margin-top: 10px;
+  font-family: "Lato-Regular";
+  font-size: 14px;
+  line-height: 17px;
+  color: #5a5a5a;
+  display: block;
+  text-decoration: none;
+}
+md-checkbox.md-checkbox-checked {
+  text-decoration: line-through;
+  color: #c9c9c9;
+}
+md-checkbox.md-checkbox-checked.md-accent .md-checkbox-background, .md-checkbox-indeterminate.md-accent .md-checkbox-background {
+  background-color: #c9c9c9;
+}
+
+md-list-item {
+	height: 300px
+}
+md-toolbar {
+	color: #f7f7f7 !important;
+  display: block;
+}
+
+md-sidenav.md-sidenav-opened, md-sidenav.md-sidenav-opening{
+  box-shadow: 0 0 0 0 !important;
+}
+
+
+// .example-header-image {
+//   background-image: url('assets/img/examples/shiba1.jpg');
+//   background-size: cover;
+// }

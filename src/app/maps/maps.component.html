@@ -1,0 +1,123 @@
+<h2>Addresses</h2>
+<md-tab-group>
+  <md-tab label="+">
+      <div class="mapContainer">
+  <div class="mapDetail" style="margin-top: 0px;">
+    <button md-button class="mapButton">
+      <p>SAVE ADDRESS</p>
+      </button>
+    <form>
+     <md-input-container>
+            <input md-input placeholder="Address Line 1" value="&nbsp;">
+          </md-input-container>
+
+          <md-input-container>
+            <input md-input placeholder="Address Line 2" value="&nbsp;">
+          </md-input-container>
+          <md-input-container>
+            <input md-input placeholder="City/Town" value="&nbsp;">
+          </md-input-container>
+          <md-input-container>
+            <input md-input placeholder="Postcode" value="&nbsp;">
+          </md-input-container>
+          <md-input-container>
+            <input md-input placeholder="Country" value="&nbsp;">
+          </md-input-container>
+          </form>
+  </div>
+  <sebm-google-map  class="mapImage" 
+                    [latitude]=51.678418 
+                    [longitude]=7.809007 
+                    [zoomControl]="zoomControl" 
+                    [streetViewControl]="streetViewControl" 
+                    [mapDraggable]="mapDraggable"
+                    [zoom]="zoom">
+    <sebm-google-map-marker [latitude]=51.678418 [longitude]=7.809007></sebm-google-map-marker>
+  </sebm-google-map>
+  </div>
+
+
+  </md-tab>
+
+    <md-tab label="Daniel's Address">
+      <div class="mapContainer">
+  <div class="mapDetail">
+    <button md-button class="mapEditButton">
+      <p>EDIT</p>
+      </button>
+     <md-input-container>
+            <input md-input disabled placeholder="Address Line 1" value="Unit 201">
+          </md-input-container>
+
+          <md-input-container>
+            <input md-input disabled placeholder="Address Line 2" value="449 Bethnal Green Rd">
+          </md-input-container>
+          <md-input-container>
+            <input md-input disabled placeholder="City/Town" value="London">
+          </md-input-container>
+          <md-input-container>
+            <input md-input disabled placeholder="Postcode" value="E2 9QH">
+          </md-input-container>
+          <md-input-container>
+            <input md-input disabled placeholder="Country" value="United Kingdom">
+          </md-input-container>
+  </div>
+
+  <sebm-google-map  class="mapImage" 
+                    [latitude]=51.678418 
+                    [longitude]=7.809007 
+                    [zoomControl]="zoomControl" 
+                    [streetViewControl]="streetViewControl" 
+                    [mapDraggable]="mapDraggable"
+                    [zoom]="zoom">
+    <sebm-google-map-marker [latitude]=51.678418 [longitude]=7.809007></sebm-google-map-marker>
+  </sebm-google-map>
+
+</div>
+
+  </md-tab>
+
+
+
+  <md-tab label="Thursday's meeting">
+    <div class="mapContainer">
+  <div class="mapDetail">
+    <button md-button class="mapEditButton">
+      <p>EDIT</p>
+      </button>
+     <md-input-container>
+            <input md-input disabled placeholder="Address Line 1" value="62 Kelburn Parade">
+          </md-input-container>
+
+          <md-input-container>
+            <input md-input disabled placeholder="Address Line 2" value="&nbsp;">
+          </md-input-container>
+          <md-input-container>
+            <input md-input disabled placeholder="City/Town" value="Wellington">
+          </md-input-container>
+          <md-input-container>
+            <input md-input disabled placeholder="Postcode" value="6012">
+          </md-input-container>
+          <md-input-container>
+            <input md-input disabled placeholder="Country" value="New Zealand">
+          </md-input-container>
+  </div>
+
+  <sebm-google-map  class="mapImage" 
+                    [latitude]=55.678418 
+                    [longitude]=9.809007 
+                    [zoomControl]="zoomControl" 
+                    [streetViewControl]="streetViewControl" 
+                    [mapDraggable]="mapDraggable"
+                    [zoom]="zoom">
+    <sebm-google-map-marker [latitude]=55.678418 [longitude]=9.809007></sebm-google-map-marker>
+  </sebm-google-map>
+
+</div>
+
+
+  </md-tab>
+
+
+</md-tab-group>
+

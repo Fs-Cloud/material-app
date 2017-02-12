@@ -1,0 +1,60 @@
+.messages-widget-list {
+	margin-top: 0px !important;
+	margin-left: -8px !important;
+}
+
+.messages-widget-item-date {
+
+	max-width: 20px !important;
+	margin-left: 0px !important;
+	display: inline-block;
+	vertical-align: top !important;
+	h1 {
+		font-family: "Lato-Bold";
+		font-size: 17px;
+		text-align: center;
+		position: relative;
+		margin-bottom: 0px !important;
+		color: #838383;
+	}
+	h2 {
+		font-family: "Lato-Black";
+		font-size: 10px;
+		letter-spacing: 0.5pt;
+		text-transform: uppercase;
+		text-align: center;
+		top: -13px !important;
+		margin-top: 0px !important;
+		position: relative;
+		color: #838383;
+	}
+	
+}
+.messages-widget-item-detail {
+	width: 500px !important;
+	margin-left: 12px !important;
+	display: inline-block;
+	vertical-align: top !important;
+	text-align: left;
+
+	h1 {
+		font-family: "Lato-Regular" !important;
+		font-size: 14px;
+		position: relative;
+		
+		
+	}
+	p {
+		font-family: "Lato-Regular" !important;
+		font-size: 12px !important;
+		color: #838383;
+		font-weight: 300;
+		margin-top: 0px;
+		// padding-top: 20px !important;
+		max-width: 500px !important;
+		position: relative;
+		overflow: hidden;
+		white-space: normal;
+		text-align: left !important;
+	}
+}

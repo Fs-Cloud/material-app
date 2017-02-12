@@ -1,0 +1,52 @@
+<form class="contact-form">
+
+        <div class="contact-form-row">
+
+          <md-select class="md-no-underline" placeholder="Salutation" [(ngModel)]="selectedValue" name="salutation">
+            <md-option *ngFor="let salutation of salutations" [value]="salutation.value">
+              {{salutation.viewValue}}
+            </md-option>
+          </md-select>
+
+          <md-input-container>
+            <input md-input placeholder="Preferred Name" value="Daniel Howell">
+          </md-input-container>
+
+          <md-input-container>
+            <input md-input placeholder="Date of Birth" type="date" value="DD/MM/YYYY" name="dateOfBirth">
+          </md-input-container>
+
+        </div>
+
+        <div class="contact-form-row">
+
+          <md-input-container>
+            <input md-input placeholder="First Name" value="Daniel">
+          </md-input-container>
+
+          <md-input-container>
+            <input md-input placeholder="Middle Name" value="James">
+          </md-input-container>
+
+          <md-input-container>
+            <input md-input placeholder="Last Name" value="Howell">
+          </md-input-container>
+
+        </div>
+<div class="contact-form-row">
+<md-input-container>
+  <input md-input placeholder="Nationality" value="British">
+</md-input-container>
+</div>
+<div class="contact-form-row">
+<md-input-container>
+  <input md-input placeholder="Mobile Phone" value="+447474944338">
+</md-input-container>
+<md-input-container>
+  <input md-input placeholder="Home Phone" value="+44208082907">
+</md-input-container>
+<md-input-container>
+  <input md-input placeholder="Work Phone" value="+44 20 255 5650">
+</md-input-container>
+</div>
+</form>

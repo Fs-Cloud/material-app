@@ -1,0 +1,34 @@
+
+<md-card *ngFor="let notification of notifications; let i = index">
+  <md-card-content class="messageNotificationCard" *ngIf="notification.type=='message'">
+  
+    <h1>New message from {{notification.from}}</h1>
+    <h2>{{notification.timestamp | amTimeAgo}}</h2>
+    <button md-icon-button style="position: absolute; top: 10px; right: 10px" (click)="deleteMe(i)">
+        <md-icon style="color: #5a5a5a; font-size: 12px !important;">close</md-icon>
+    </button>
+    <button class="messageNotificationClick" md-button>
+    <p>{{notification.content}}</p>
+    </button>
+</md-card-content>
+
+<md-card-content class="calendarNotificationCard" *ngIf="notification.type=='calendar'">
+  <h1>{{notification.from}} sent you an invite</h1>
+  <h2>{{notification.timestamp | amTimeAgo}}</h2>
+  <button md-icon-button style="position: absolute; top: 10px; right: 10px" (click)="deleteMe(i)">
+        <md-icon style="color: #5a5a5a; font-size: 12px !important;">close</md-icon>
+    </button>
+    <button class="calendarNotificationClick" md-button>
+    <p>View in Calendar</p>
+    </button>
+</md-card-content>
+
+<md-card-content class="taskNotificationCard" *ngIf="notification.type=='task'">
+  <h1>New Task assigned by {{notification.from}}</h1>
+  <h2>{{notification.timestamp | amTimeAgo}}</h2>
+  <button md-icon-button style="position: absolute; top: 10px; right: 10px" (click)="deleteMe(i)">
+        <md-icon style="color: #5a5a5a; font-size: 12px !important;">close</md-icon>
+    </button>
+  <md-checkbox>{{notification.content}}</md-checkbox>
+</md-card-content> 
+</md-card>

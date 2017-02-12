@@ -1,0 +1,119 @@
+.messageNotificationCard {
+
+	h1 {
+		font-family: "Lato-Regular";
+		font-size: 14px;
+		top: 20px;
+		color: #5a5a5a;
+		position: absolute;
+		left: 0px;
+	}
+	h2 {
+		font-family: "Lato-Bold";
+		font-size: 10px;
+		color: #a7a7a7;
+		margin-top: 12px;
+		position: relative;
+		left: -23px;
+		letter-spacing: 0px;
+	}
+	p {
+		font-family: "Lato-Regular";
+		font-size: 12px;
+		color: #5a5a5a;
+		position: relative;
+		overflow: hidden;
+		white-space: normal;
+		text-align: left !important;
+	}
+	.messageNotificationClick {
+		width: 280px;
+		padding: 4px !important;
+		margin-left: -27px;
+		margin-top: -5px;
+	}
+}
+.taskNotificationCard {
+	h1 {
+		font-family: "Lato-Regular";
+		font-size: 14px;
+		top: 20px;
+		color: #5a5a5a;
+		position: absolute;
+		left: 0px;
+	}
+	h2 {
+		font-family: "Lato-Bold";
+		font-size: 10px;
+		color: #a7a7a7;
+		margin-top: 12px;
+		position: relative;
+		left: -23px;
+		letter-spacing: 0px;
+	}
+	md-checkbox {
+		position: relative;
+		left: -23px;
+	}
+}
+.calendarNotificationCard {
+	h1 {
+		font-family: "Lato-Regular";
+		font-size: 14px;
+		top: 20px;
+		color: #5a5a5a;
+		position: absolute;
+		left: 0px;
+	}
+	h2 {
+		font-family: "Lato-Bold";
+		font-size: 10px;
+		color: #a7a7a7;
+		margin-top: 12px;
+		position: relative;
+		left: -23px;
+		letter-spacing: 0px;
+	}
+	p {
+		font-family: "Lato-Regular";
+		font-size: 12px;
+		color: #5a5a5a;
+		position: relative;
+		overflow: hidden;
+		white-space: normal;
+		text-align: left !important;
+	}
+	.messageNotificationClick {
+		width: 280px;
+		padding: 4px !important;
+		margin-left: -27px;
+		margin-top: -5px;
+	}
+}
+
+md-card {
+	background-color: #f7f7f7;
+	border-radius: none !important;
+	box-shadow: none !important;
+ 	border-bottom: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #E2E2E4;
+  	margin: 0px 20px 0px 20px;
+  	padding-bottom: 10px;
+	min-height: 90px;	
+}
+md-icon {
+padding: 0px !important;
+}
+.md-icon-button {
+	width: 10px !important;
+	height: 10px !important;
+	padding: 0px !important;
+	position: absolute;
+	right: 0px !important;
+	top: -10px !important;
+}
+
+.md-ripple-background {
+	background-color: none !important;
+}

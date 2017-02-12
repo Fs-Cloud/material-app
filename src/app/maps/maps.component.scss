@@ -1,0 +1,73 @@
+
+
+.mapDetail {
+display: block;
+height: 240px;
+width: 204px;
+background-color: #efefef;
+padding-top: 15px;
+}
+.mapButton {
+	position: relative;
+	top: -7px;
+	left: 80px;
+	min-width: 10px !important;
+	text-align: right !important;	
+	p {
+		font-family: "Lato-Bold" !important;
+		font-size: 12px;
+		margin: 0px 0px 0px 0px;
+		text-align: right !important;
+	}
+}
+.mapEditButton {
+	position: relative;
+	top: -7px;
+	left: 140px;
+	min-width: 10px !important;
+	text-align: right !important;	
+	p {
+		font-family: "Lato-Bold" !important;
+		font-size: 12px;
+		margin: 0px 0px 0px 0px;
+		text-align: right !important;
+	}
+}
+
+.mapText {
+	margin-bottom: -5px;
+
+}
+
+.mapContainer {
+	margin-top: 10px;
+	height: 240px;
+	width: 505px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+
+.mapImage {
+	height: 240px;
+ 	width: 301px;
+	 display: block;
+	 	margin-top: -255px;
+		 
+		 margin-left: 204px;
+
+}
+
+md-input-container {
+  font-family: "Lato-Regular";
+  color: #c9c9c9 !important;
+  font-size: 13px;
+  width: 170px;
+  margin-left: 15px;
+  margin-bottom: -8px;
+}
+
+input {
+	font-family: "Lato-Regular";
+	color: #5a5a5a;
+}

@@ -1,0 +1,55 @@
+<md-sidenav-layout class="example-sidenav-fab-container">
+  
+  <md-sidenav #sidenav mode="side" opened="true" align="start" class="left-sidenav">
+
+    <div class="example-scrolling-content">
+      <img src="../assets/sideleft@2x.png" style="width:346.14px;">
+
+    </div>
+
+  </md-sidenav>
+  <div class="app-content">
+      <md-toolbar class="context-subheader" color="primary"style="height: 66px !important; background-color: #fff !important; margin-bottom: 0px;">
+    <div class="welcomeBlock">
+    <h3>Welcome back, Edwin</h3>
+    <p>Thursday 2 February 2017</p>
+    </div>
+    <button md-button (click)="sidenav.toggle()">
+      right menu
+    </button>
+  </md-toolbar>
+  <div class="example-scrolling-content main-scroll">
+
+      
+    <div class="detail-container">
+      <div class="intro-container">
+        <div class="intro-padding"></div>
+        <div class="intro-scroll">
+        <div class="intro-card">
+          <h4>Getting started</h4>
+</div>
+
+        </div>
+      </div>
+      <div class="task-home-container">
+        <div class="todo-card">
+          <h2>Tasks</h2>
+          <md-checkbox>Choose some royalty free fonts</md-checkbox>
+          <md-checkbox>Give Jono feedback on design</md-checkbox>
+          <md-checkbox>Discuss Electron app shell</md-checkbox>
+        </div>
+      </div>
+
+     
+
+
+
+    </div>
+
+
+
+
+  </div>
+
+  </div>
+  </md-sidenav-layout>
