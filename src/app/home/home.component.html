@@ -3,12 +3,76 @@
   <md-sidenav #sidenav mode="side" opened="true" align="start" class="left-sidenav">
 
     <div class="example-scrolling-content">
-      <img src="../assets/sideleft@2x.png" style="width:346.14px;">
+
+      <md-input-container floatingPlaceholder="false" class="etherSearch" dividerColor="#7BACC9">
+        <input md-input placeholder="Templar Financial Advisors" style="width: 120px; margin-top: -10px; margin-left: 5px; color: #838383 !important;">
+        <button md-icon-button style="margin-left: 120px; margin-top: -50px !important;"><md-icon style="color: #838383; width: 20px;">search</md-icon></button>
+      </md-input-container >
+      <!--<button md-button style="text-align: left !important; padding: 5px; margin-top: -10px;">
+          <p style="margin: 4px 170px 4px 10px;">+ &nbsp; &nbsp;Add New Contact</p>
+          </button>-->
+
+      <md-nav-list>
+        <button md-button *ngFor="let teamMember of teamMembers" style="width: 100% !important; align-items: true">
+          
+          <img *ngIf="teamMember.photo" class="contactAvatar" md-list-avatar [src]="teamMember.photo">
+            <h3 md-line>{{teamMember.name}}</h3>
+            <p md-line>{{teamMember.updated | amTimeAgo}} </p>
+          
+          </button>
+
+          
+
+      </md-nav-list>
+
+      <md-input-container floatingPlaceholder="false" class="etherSearch" dividerColor="#7BACC9">
+        <input md-input placeholder="Templar Financial Advisors" style="width: 120px; margin-top: -10px; margin-left: 5px; color: #838383 !important;">
+        <button md-icon-button style="margin-left: 120px; margin-top: -50px !important;"><md-icon style="color: #838383; width: 20px;">search</md-icon></button>
+      </md-input-container >
+      <!--<button md-button style="text-align: left !important; padding: 5px; margin-top: -10px;">
+          <p style="margin: 4px 170px 4px 10px;">+ &nbsp; &nbsp;Add New Contact</p>
+          </button>-->
+
+      <md-nav-list>
+        <button md-button *ngFor="let teamMember of teamMembers" style="width: 100% !important; align-items: true">
+          
+          <img *ngIf="teamMember.photo" class="contactAvatar" md-list-avatar [src]="teamMember.photo">
+            <h3 md-line>{{teamMember.name}}</h3>
+            <p md-line>{{teamMember.updated | amTimeAgo}} </p>
+          
+          </button>
+
+          
+
+      </md-nav-list>
+
+      <md-input-container floatingPlaceholder="false" class="etherSearch" dividerColor="#7BACC9">
+        <input md-input placeholder="Templar Financial Advisors" style="width: 120px; margin-top: -10px; margin-left: 5px; color: #838383 !important;">
+        <button md-icon-button style="margin-left: 120px; margin-top: -50px !important;"><md-icon style="color: #838383; width: 20px;">search</md-icon></button>
+      </md-input-container >
+      <!--<button md-button style="text-align: left !important; padding: 5px; margin-top: -10px;">
+          <p style="margin: 4px 170px 4px 10px;">+ &nbsp; &nbsp;Add New Contact</p>
+          </button>-->
+
+      <md-nav-list>
+        <button md-button *ngFor="let teamMember of teamMembers" style="width: 100% !important; align-items: true">
+          
+          <img *ngIf="teamMember.photo" class="contactAvatar" md-list-avatar [src]="teamMember.photo">
+            <h3 md-line>{{teamMember.name}}</h3>
+            <p md-line>{{teamMember.updated | amTimeAgo}} </p>
+          
+          </button>
+
+          
+
+      </md-nav-list>
+
+      <!--<img src="../assets/sideleft@2x.png" style="width:346.14px;">-->
 
     </div>
 
   </md-sidenav>
-  <div class="app-content">
+  <div>
       <md-toolbar class="context-subheader" color="primary"style="height: 66px !important; background-color: #fff !important; margin-bottom: 0px;">
     <div class="welcomeBlock">
     <h3>Welcome back, Edwin</h3>
@@ -32,13 +96,11 @@
         </div>
       </div>
       <div class="task-home-container">
-        <div class="todo-card">
-          <h2>Tasks</h2>
-          <md-checkbox>Choose some royalty free fonts</md-checkbox>
-          <md-checkbox>Give Jono feedback on design</md-checkbox>
-          <md-checkbox>Discuss Electron app shell</md-checkbox>
-        </div>
+          <app-tasks-widget></app-tasks-widget>
       </div>
+      <div class="task-home-container">
+          <app-messages-widget></app-messages-widget>
+        </div>
 
      
 
