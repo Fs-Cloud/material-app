@@ -29,6 +29,18 @@
   }
 }
 
+.top-left-buttons {
+  margin: 2px 0px 2px 0px !important;
+  height: 38px !important;
+  width: 38px !important;
+
+  md-icon {
+    color: #838383;
+    font-size: 22px;
+    margin-top: -4.5px;
+  }
+}
+
 .profileMenu {
   img {
     height: 30px;

@@ -3,7 +3,15 @@
 
  <md-toolbar class="app-toolbar" color="primary">
    <div fxLayout="row" fxFill>
-     <div fxFlex="300px" fxLayoutAlign="end">
+     <div fxFlex="100px" fxLayoutAlgin="start">
+       <button class="top-left-buttons" md-icon-button>
+      <md-icon>arrow_back</md-icon>
+    </button>
+    <button class="top-left-buttons" md-icon-button>
+      <md-icon>arrow_forward</md-icon>
+    </button>
+      </div> 
+     <div fxFlex="200px" fxLayoutAlign="end">
    
      
     <!--<button md-icon-button (click)="openLeftNav()">
@@ -114,23 +122,20 @@
 
 
     <button class="top-buttons" md-icon-button>
-      <md-icon>build</md-icon>
+      <md-icon>add</md-icon>
     </button>
-    <button class="top-buttons" md-icon-button>
+    <button class="top-buttons" md-icon-button mdTooltip="Last sync: 22 minutes ago">
       <md-icon>cached</md-icon>
     </button>
-    <button class="top-buttons" md-icon-button>
-      <md-icon>alarm</md-icon>
+    <button class="top-buttons" md-icon-button mdTooltip="Slack">
+      <md-icon>forum</md-icon>
     </button>
-    <button class="top-buttons" md-icon-button>
-      <md-icon>assessment</md-icon>
+    <button class="top-buttons" md-icon-button (click)="rightsidenav.toggle()" mdTooltip="Notifications">
+      <md-icon>notifications</md-icon>
     </button>
-    <button class="top-buttons" md-icon-button>
+    <!--<button class="top-buttons" md-icon-button (click)="rightsidenav.toggle()" mdTooltip="Notifications">
       <md-icon>dns</md-icon>
-    </button>
-    <button class="top-buttons" md-icon-button (click)="rightsidenav.toggle()">
-      <md-icon>announcement</md-icon>
-    </button>
+    </button>-->
 
 
 

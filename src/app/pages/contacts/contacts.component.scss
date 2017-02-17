@@ -34,23 +34,22 @@
   bottom: 10px;
 }
 
-.app-content {
-	min-height: 200vh;
+// .app-content {
+// 	min-height: 200vh;
 
   
-}
+// }
 
 .example-card {
   width: 400px;
 }
 .detail-container {
-  width: 100%;
   background-color: #ffffff;
   border-bottom: solid;
 	border-bottom-width: 1px;
 	border-bottom-color: #E2E2E4;
   margin: 0px 20px 0px 20px;
-  padding-bottom: 10px;
+
   
 }
 
@@ -110,11 +109,6 @@
 	border-bottom-color: #E2E2E4;
   margin-left: 20px;
   padding-bottom: 30px;
-}
-
-.main-scroll {
-    width: calc(100vw - 320px);
-
 }
 
 
