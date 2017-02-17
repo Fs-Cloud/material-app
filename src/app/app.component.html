@@ -1,126 +1,165 @@
 
 
 
-<div class="app-content">
-  <md-toolbar color="primary">
-    <button md-icon-button (click)="openLeftNav()" style="margin-left: -10px">
-      <md-icon svgIcon="ether" color="warn" style="margin-top: -2px;"></md-icon>
-    </button>
-
-    Ether
-
-    
-    <button md-button (click)="rightsidenav.toggle()">
-      right menu
-    </button>
-
-    <button md-button (click)="routeContacts()">
-      <h2>contacts</h2>
-    </button>
-    <button md-button (click)="routeHome()">
-      <h2>home</h2>
-    </button>
-     <button md-button (click)="routeNotifications()">
-      <h2>notifications</h2>
-    </button>
-
-  </md-toolbar>
-
-
-
-  
-<md-sidenav-layout class="example-sidenav-fab-container">
-  
-  <!--<md-sidenav #sidenav mode="side" opened="true" align="start" class="left-sidenav">
-
-    <div class="example-scrolling-content">
-      <img src="../assets/sideleft@2x.png" style="width:346.14px;">
-
-    </div>
-
-  </md-sidenav>-->
-
-
-<div class="app-content">
-
-  <!--<md-card *ngFor="let notification of notifications; let i = index">
-      <md-card-content>
-        <p>{{ notification.from }}</p>
-        <p>>{{ notification.timestamp }} </p>
-      </md-card-content>
-      <md-card-actions>
-        <button md-button (click)="deleteMe(i)">
-          DELETE
-        </button>
-      </md-card-actions>
-    </md-card>-->
-
-  <router-outlet></router-outlet>
-  <!--<md-toolbar class="context-subheader" color="primary"style="height: 66px !important; background-color: #fff !important; margin-bottom: 0px;">
-    <div class="welcomeBlock">
-    <h3>Welcome back, Edwin</h3>
-    <p>Thursday 2 February 2017</p>
-    </div>
-  </md-toolbar>
-  <div class="example-scrolling-content main-scroll">
-
-      
-    <div class="detail-container">
-      <div class="intro-container">
-        <div class="intro-padding"></div>
-        <div class="intro-scroll">
-        <div class="intro-card">
-          <h4>Getting started</h4>
-</div>
-
-        </div>
-      </div>
-      <div class="task-home-container">
-        <div class="todo-card">
-          <h2>Tasks</h2>
-          <md-checkbox>Choose some royalty free fonts</md-checkbox>
-          <md-checkbox>Give Jono feedback on design</md-checkbox>
-          <md-checkbox>Discuss Electron app shell</md-checkbox>
-        </div>
-      </div>
-
+ <md-toolbar class="app-toolbar" color="primary">
+   <div fxLayout="row" fxFill>
+     <div fxFlex="300px" fxLayoutAlign="end">
+   
      
+    <!--<button md-icon-button (click)="openLeftNav()">
+      <md-icon svgIcon="ether" color="warn" style="margin-top: -2px;"></md-icon>
+    </button>-->
+    
 
 
+    <button class="profileMenu" md-button [mdMenuTriggerFor]="menu">
+      <div fxLayout="row" fxFill>
+        <div fxLayout="column">
+          <h1>Edwin Luther</h1>
+          <h2>ADMINISTRATOR</h2>
+        </div>
+      
+      <img [src]='userAvatar'>
+      </div>
+      </button>
+<md-menu x-position="before" #menu="mdMenu">
+  <button md-menu-item>Item 1</button>
+  <button md-menu-item>Item 2</button>
+</md-menu>
+    </div>
+    <div fxFlex fxLayoutAlign="start">
+      <button class="mainMenu" md-button [mdMenuTriggerFor]="menu2">
+      <div fxLayout="row" fxFill>
+        <h3><md-icon>apps</md-icon></h3>
+        <div fxLayout="column">
+          <h1>Home</h1>
+        </div>
+      
+      
+      </div>
+      </button>
+      <md-menu class="mainMenuContainer" x-position="after" #menu2="mdMenu">
+        <div fxLayout="row" fxFill>
+              <button md-menu-item (click)="routeHome()">
+                <div fxLayout="column">
+                <img [src]='homeMenuImage'>
+                <h1>Home</h1>
+                </div>
+                </button>
+             <button md-menu-item (click)="routeHome()">
+                <div fxLayout="column">
+                <img [src]='salesMenuImage'>
+                <h1>Sales</h1>
+                </div>
+                </button>
+                <button md-menu-item (click)="routeHome()">
+                <div fxLayout="column">
+                <img [src]='opportunitiesMenuImage'>
+                <h1>Opport.</h1>
+                </div>
+                </button>
+                 <button md-menu-item (click)="routeHome()">
+                <div fxLayout="column">
+                <img [src]='accountsMenuImage'>
+                <h1>Accounts</h1>
+                </div>
+                </button>
+                <button md-menu-item (click)="routeHome()">
+                <div fxLayout="column">
+                <img [src]='marketsMenuImage'>
+                <h1>Markets</h1>
+                </div>
+                </button>
+        </div>
+        <div fxLayout="row" fxFill>
+              <button md-menu-item (click)="routeHome()">
+                <div fxLayout="column">
+                <img [src]='messagesMenuImage'>
+                <h1>Messages</h1>
+                </div>
+                </button>
+             <button md-menu-item (click)="routeContacts()">
+                <div fxLayout="column">
+                <img [src]='contactsMenuImage'>
+                <h1>Contacts</h1>
+                </div>
+                </button>
+                <button md-menu-item (click)="routeHome()">
+                <div fxLayout="column">
+                <img [src]='calendarMenuImage'>
+                <h1>Calendar</h1>
+                </div>
+                </button>
+                <button md-menu-item (click)="routeHome()">
+                <div fxLayout="column">
+                <img [src]='tasksMenuImage'>
+                <h1>Tasks</h1>
+                </div>
+                </button>
+                <button md-menu-item (click)="routeHome()">
+                <div fxLayout="column">
+                <img [src]='notesMenuImage'>
+                <h1>Notes</h1>
+                </div>
+                </button>
+        </div>
+</md-menu>
 
     </div>
 
+    <div fxFlex fxLayoutAlign="end">
+    
 
 
 
-  </div>-->
-</div>
 
-  <!--<md-sidenav #sidenav-right mode="side" opened="true">
-    <button md-mini-fab class="example-fab" (click)="sidenav-right.toggle()">
-      <md-icon>add</md-icon>
+    <button class="top-buttons" md-icon-button>
+      <md-icon>build</md-icon>
     </button>
-    <div class="example-scrolling-content">
-      Lorem ipsum dolor sit amet, pede a libero aenean phasellus, lectus metus sint ut risus,
-      fusce vel in pellentesque. Nisl rutrum etiam morbi consectetuer tempor magna, aenean nullam
-      nunc id, neque vivamus interdum sociis nulla scelerisque sem, dolor id wisi turpis magna
-      aliquam magna. Risus accumsan hac eget etiam donec sed, senectus erat mattis quam, tempor
-      vel urna occaecat cras, metus urna augue nec at. Et morbi amet dui praesent, nec eu at,
-      ligula ipsum dui sollicitudin, quis nisl massa viverra ligula, mauris fermentum orci arcu
-      enim fringilla. Arcu erat nulla in aenean lacinia ullamcorper, urna ante nam et sagittis,
-      tristique vehicula nibh ipsum vivamus, proin proin. Porta commodo nibh quis libero amet.
-      Taciti dui, sapien consectetuer.
+    <button class="top-buttons" md-icon-button>
+      <md-icon>cached</md-icon>
+    </button>
+    <button class="top-buttons" md-icon-button>
+      <md-icon>alarm</md-icon>
+    </button>
+    <button class="top-buttons" md-icon-button>
+      <md-icon>assessment</md-icon>
+    </button>
+    <button class="top-buttons" md-icon-button>
+      <md-icon>dns</md-icon>
+    </button>
+    <button class="top-buttons" md-icon-button (click)="rightsidenav.toggle()">
+      <md-icon>announcement</md-icon>
+    </button>
+
+
+
+
+
+
     </div>
-  </md-sidenav>-->
+</div>
+</md-toolbar>
+
+
+
+  
+<md-sidenav-layout class="app-container">
+  
+  <div fxFill>
+
+    <router-outlet></router-outlet>
+
+  </div>
+
   <md-sidenav #rightsidenav mode="side" align="end" class="right-sidenav">
 
-    <div class="example-scrolling-content">
+
 <app-notifications></app-notifications>
       
       
 
-    </div>
+
   </md-sidenav>
 </md-sidenav-layout>
 
-</div>

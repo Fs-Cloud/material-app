@@ -1,21 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { routerTransition } from '../router.transitions';
+import { routerTransition } from '../../router.transitions';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  selector: 'app-contacts',
+  templateUrl: './contacts.component.html',
+  styleUrls: ['./contacts.component.scss'],
   animations: [routerTransition()],
   host: {'[@routerTransition]': ''}
 })
-export class HomeComponent implements OnInit {
+export class ContactsComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  teamMembers = [
+  contacts = [
     {
       name: 'Nancy Hanson',
       updated: new Date('1/1/16'),
@@ -37,5 +37,6 @@ export class HomeComponent implements OnInit {
       photo: '../assets/5.jpg'
     }
   ];
+  
 
 }

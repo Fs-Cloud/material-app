@@ -17,7 +17,6 @@
 
 .example-scrolling-content {
 	padding-top: 0px;
-  width: 100%;
   background-color: #f7f7f7 !important;
 	border: solid;
   border-top: none;
@@ -97,7 +96,7 @@
 }
 
 .main-scroll {
-    width: calc(100vw - 315px);
+
 }
 
 
@@ -170,7 +169,7 @@ md-list-item {
 }
 md-toolbar {
 	color: #f7f7f7 !important;
-  display: block;
+  // display: block;
 }
 
 md-sidenav.md-sidenav-opened, md-sidenav.md-sidenav-opening{

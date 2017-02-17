@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-maps',
-  templateUrl: './maps.component.html',
-  styleUrls: ['./maps.component.scss']
+  selector: 'app-maps-widget',
+  templateUrl: './maps-widget.component.html',
+  styleUrls: ['./maps-widget.component.scss']
 })
-export class MapsComponent implements OnInit {
+export class MapsWidgetComponent implements OnInit {
 
   mapDraggable: boolean = true;
   zoomControl: boolean = false;

@@ -35,8 +35,23 @@ export class AppComponent {
   routeNotifications() {
     this.router.navigate(['/notifications']);
   }
+  routeMessages() {
+    this.router.navigate(['messages']);
+  }
   
   title = 'app works!';
+
+  userAvatar = 'assets/8.jpg';
+  homeMenuImage = 'assets/icons/home_icon@2x.png';
+  salesMenuImage = 'assets/icons/sales_icon@2x.png';
+  opportunitiesMenuImage = 'assets/icons/opportunities_icon@2x.png';
+  accountsMenuImage = 'assets/icons/accounts_icon@2x.png';
+  marketsMenuImage = 'assets/icons/markets_icon@2x.png';
+  messagesMenuImage = 'assets/icons/messages_icon@2x.png';
+  contactsMenuImage = 'assets/icons/contacts_icon@2x.png';
+  calendarMenuImage = 'assets/icons/calendar_icon@2x.png';
+  tasksMenuImage = 'assets/icons/tasks_icon@2x.png';
+  notesMenuImage = 'assets/icons/notes_icon@2x.png';
   
   notes = [
     {

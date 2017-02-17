@@ -3,17 +3,14 @@
 
 body {
 	margin: 0;
-	max-height: 100vh !important;
+	height: 100vh;
 	overflow: hidden;
-    background-color: #f7f7f7 !important;
 }
 md-toolbar-row {
 	height: 42.4px !important;
-	min-height: 42.4px !important;
 }
 
 md-toolbar {
-	height: 42.4px !important;
 	min-height: 42.4px !important;
 	background-color: #f7f7f7 !important;
 	border-bottom: solid;

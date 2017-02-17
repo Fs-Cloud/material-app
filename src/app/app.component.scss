@@ -1,103 +1,117 @@
-.example-sidenav-fab-container {
+.app-container {
 	height: 100%;
-//   border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.example-sidenav-fab-container md-sidenav {
-  // max-width: 348.14px;
-  // height: calc(100vh - 42px);
+// .example-fab {
+//   position: absolute;
+//   right: 20px;
+//   bottom: 10px;
+// }
+
+// .example-card {
+//   width: 400px;
+// }
+
+.right-sidenav {
+  width: 320px;
   background-color: #f7f7f7 !important;
 }
 
-.example-sidenav-fab-container .md-sidenav-content,
-.example-sidenav-fab-container md-sidenav {
-  display: flex;
-  // overflow: visible;
+.top-buttons {
+  margin: 2px 0px 2px 14px !important;
+  height: 38px !important;
+  width: 38px !important;
+
+  md-icon {
+    color: #838383;
+    font-size: 22px;
+    margin-top: -4.5px;
+  }
 }
 
-// .example-scrolling-content {
-// 	padding-top: 0px;
-//   width: 100%;
-//   background-color: #f7f7f7 !important;
-// 	border: solid;
-//   border-top: none;
-//   height: calc(100vh - 42px);
-// 	border-width: 1px;
-// 	border-color: #E2E2E4;
-//   overflow-y: scroll;
-// }
-
-.example-fab {
-  position: absolute;
-  right: 20px;
-  bottom: 10px;
+.profileMenu {
+  img {
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+    margin-top: 7px;
+    margin-left: 15px;
+  }
+  h1 {
+    font-family: 'Lato-Regular';
+    font-size: 13px;
+    color: #5a5a5a;
+    text-align: left;
+  }
+  h2 {
+    margin-top: -15px;
+    font-family: 'Lato-Black';
+    font-size: 9px;
+    color: #5a5a5a;
+    text-align: left;
+  }
+  h3 {
+    font-family: 'Lato-Regular';
+    font-size: 13px;
+    color: #5a5a5a;
+    margin-top: -7px;
+    text-align: left;
+  }
 }
 
-.app-content {
-	min-height: 200vh;
-  
+.mainMenu {
+
+  h1 {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+    color: #5a5a5a;
+    text-align: left;
+    margin-top: 12px;
+    margin-left: 10px;
+  }
+  h2 {
+    margin-top: -15px;
+    font-family: 'Lato-Black';
+    font-size: 9px;
+    color: #5a5a5a;
+    text-align: left;
+  }
+  h3 {
+    font-family: 'Lato-Regular';
+    font-size: 13px;
+    color: #5a5a5a;
+    margin-top: -6px;
+    text-align: left;
+  }
 }
 
-.example-card {
-  width: 400px;
-}
-// .detail-container {
-//   width: 100%;
-//   background-color: #ffffff;
-// }
-
-// .right-sidenav {
-//   width: 320px;
-// }
-.left-sidenav {
-  width: 348.14px;
-}
-.intro-container {
-  height: 266px;
-  border-bottom: solid;
-	border-bottom-width: 1px;
-	border-bottom-color: #E2E2E4;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
-.context-subheader {
-  height: 66px !important; 
-  background-color: #fff !important; 
-  margin-bottom: 0px;
-  border-right: solid;
-	border-right-width: 1px;
-	border-right-color: #E2E2E4;
-  border-left: solid;
-	border-left-width: 1px;
-	border-left-color: #E2E2E4;
-}
-
-.intro-padding {
-  height: 1px;
-  
-}
-.intro-card {
-  margin-top: -20px;
+.mainMenuContainer {
   border-radius: 4px;
-  background-color: #3DADA9;
-  width: 441px;
-  height: 227px;
-  display: block;
+  background-color: #f7f7f7;
+  button {
+    min-height: 78px !important;
+    margin-top: 10px;
+  }
+  img {
+    height: 52px;
+    width: 52px;
+  }
+  h1 {
+    font-family: 'Lato-Regular';
+    font-size: 12px;
+    color: #5a5a5a;
+    text-align: center;
+    margin-top: 5px;
+    max-width: 52px;
+    text-overflow: ellipsis;
+  }
+
 }
 
-.task-home-container {
-  max-height: 266px;
-  border-bottom: solid;
-	border-bottom-width: 1px;
-	border-bottom-color: #E2E2E4;
-  margin-left: 20px;
-  padding-bottom: 30px;
+.md-menu-panel {
+  max-width: 1000px !important;
+  margin-top: 42px;
 }
-
-// .main-scroll {
-//     width: 100vw
-// }
 
 
 h1 {
@@ -167,17 +181,7 @@ md-checkbox.md-checkbox-checked.md-accent .md-checkbox-background, .md-checkbox-
 md-list-item {
 	height: 300px
 }
-md-toolbar {
-	color: #f7f7f7 !important;
-  display: block;
-}
 
 md-sidenav.md-sidenav-opened, md-sidenav.md-sidenav-opening{
   box-shadow: 0 0 0 0 !important;
 }
-
-
-// .example-header-image {
-//   background-image: url('assets/img/examples/shiba1.jpg');
-//   background-size: cover;
-// }
