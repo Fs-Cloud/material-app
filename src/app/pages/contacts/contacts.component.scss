@@ -3,42 +3,20 @@
 //   border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.example-sidenav-fab-container md-sidenav {
-  // max-width: 348.14px;
-  // height: calc(100vh - 42px);
-  background-color: #f7f7f7 !important;
-}
-
-.example-sidenav-fab-container .md-sidenav-content,
-.example-sidenav-fab-container md-sidenav {
-  display: flex;
-  // overflow: visible;
-}
 
 .example-scrolling-content {
 	padding-top: 0px;
-  width: 100%;
+  width: calc(100%-1px);
   background-color: #f7f7f7 !important;
 	border: solid;
   border-top: none;
+  border-right: none;
   height: calc(100vh - 42px);
-  padding-bottom: 500px !important;
+  // padding-bottom: 500px !important;
 	border-width: 1px;
 	border-color: #E2E2E4;
   overflow-y: scroll;
 }
-
-.example-fab {
-  position: absolute;
-  right: 20px;
-  bottom: 10px;
-}
-
-// .app-content {
-// 	min-height: 200vh;
-
-  
-// }
 
 .example-card {
   width: 400px;
@@ -57,7 +35,7 @@
   max-width: 320px;
 }
 .left-sidenav {
-  max-width: 315px;
+  width: 318px;
 }
 .intro-container {
   height: 266px;
@@ -72,9 +50,9 @@
   height: 66px !important; 
   background-color: #fff !important; 
   margin-bottom: 0px;
-  border-right: solid;
-	border-right-width: 1px;
-	border-right-color: #E2E2E4;
+  // border-right: solid;
+	// border-right-width: 1px;
+	// border-right-color: #E2E2E4;
   border-left: solid;
 	border-left-width: 1px;
 	border-left-color: #E2E2E4;

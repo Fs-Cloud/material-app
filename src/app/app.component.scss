@@ -15,6 +15,9 @@
 .right-sidenav {
   width: 320px;
   background-color: #f7f7f7 !important;
+  border-left-style: solid;
+  border-left-color: #e2e2e4;
+  border-left-width: 1px;
 }
 
 .top-buttons {
@@ -52,20 +55,20 @@
   h1 {
     font-family: 'Lato-Regular';
     font-size: 13px;
-    color: #5a5a5a;
+    color: #6a6a6a;
     text-align: left;
   }
   h2 {
     margin-top: -15px;
     font-family: 'Lato-Black';
     font-size: 9px;
-    color: #5a5a5a;
+    color: #6a6a6a;
     text-align: left;
   }
   h3 {
     font-family: 'Lato-Regular';
     font-size: 13px;
-    color: #5a5a5a;
+    color: #6a6a6a;
     margin-top: -7px;
     text-align: left;
   }
@@ -76,7 +79,7 @@
   h1 {
     font-family: 'Lato-Regular';
     font-size: 14px;
-    color: #5a5a5a;
+    color: #838383;
     text-align: left;
     margin-top: 12px;
     margin-left: 10px;
@@ -85,13 +88,13 @@
     margin-top: -15px;
     font-family: 'Lato-Black';
     font-size: 9px;
-    color: #5a5a5a;
+    color: #838383;
     text-align: left;
   }
   h3 {
     font-family: 'Lato-Regular';
     font-size: 13px;
-    color: #5a5a5a;
+    color: #838383;
     margin-top: -6px;
     text-align: left;
   }
